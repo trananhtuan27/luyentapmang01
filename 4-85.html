@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function demo() {
+        let x =[32,34,2,53,75,543,4,33,12,3];
+        let reverst =[];
+        for (let i=0,j=x.length-1;i<x.length;i++,j--) {
+            reverst[j] = x[i];
+        }
+        document.write(reverst);
+    }
+    demo();
+    function demo2() {
+        let arr =[];
+        for (let i=0;i<10;i++){
+            let inp = parseInt(prompt("nhập"));
+            arr.push(inp);
+        }
+        document.write(arr)
+    }
+    demo2();
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bien1"></div>
+<div id="bien2"></div>
+<script>
+    let max = 0;
+    let arr = [12,25,6,28,55,21,1,877,12,64];
+    for (let i =0; i<arr.length; i++){
+        if (max < arr[i]){
+            max = arr[i];
+        }
+    }
+    document.getElementById("bien1").innerHTML = "giá trị lớn nhất :" +  max;
+    let medium = 0;
+    let total = 0;
+    for (let i=0;i<arr.length;i++){
+        total = total + arr[i];
+        medium = total / arr.length;
+    }
+    document.getElementById("bien2").innerHTML = "tổng trung bình:" + medium;
+</script>
+</body>
+</html>
